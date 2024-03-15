@@ -42,13 +42,3 @@ class disp_fig(object):
             ax.get_xaxis().set_visible(False)
             ax.get_yaxis().set_visible(False)
             
-
-    def figure(self):
-        # Display video frames using 8 subplot
-        for i in range(8):
-            ax = plt.subplot(1, 8, i+1)
-            image = self.video[0][i]
-            plt.imshow(image)
-            plt.gray()
-            ax.get_xaxis().set_visible(False)
-            ax.get_yaxis().set_visible(False)
